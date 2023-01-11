@@ -1,0 +1,117 @@
+<html>
+  <head>
+    <title>Google</title>
+  </head>
+
+  <body>
+    <h1>Sreekanth's website!</h1>
+
+    <h2 id="timer"></h2>
+
+    <p>
+      Welcome to my website! Here you will find everything about me.<br />
+      <br /><br />
+    </p>
+
+    <p>I hope you will enjoy browsing my website.</p>
+
+    <hr />
+
+    <h1 style="background-color: yellow">This is header one</h1>
+    <h2 style="text-transform: uppercase">This is header two</h2>
+    <h3>This is header three</h3>
+    <h4>This is header four</h4>
+    <h5>This is header five</h5>
+    <h6>This is header six</h6>
+
+    <hr />
+    <input type="button" value="Toggle Image" id="toggle-image" />
+    <img
+      id="my-image"
+      src="./image-file.jpg"
+      alt=""
+      width="300px"
+      style="border-radius: 50%"
+    />
+
+    <hr />
+
+    <audio controls width="300px">
+      <source src="audio-file.mp3" type="audio/mpeg" />
+    </audio>
+
+    <hr />
+
+    <video controls width="300px">
+      <source src="video-file.mp4" type="audio/mp4" />
+    </video>
+
+    <hr />
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Column One</th>
+          <th>Column Two</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Veniam, deleniti. Quasi!</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Vitae, praesentium ipsa.</td>
+        </tr>
+        <tr>
+          <td>Lorem, ipsum dolor.</td>
+          <td>Hic, quibusdam. Aperiam!</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr />
+
+    <ol>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+      <li>Facere qui aut quod officiis quaerat perferendis mollitia!</li>
+      <li>Id tenetur possimus, nobis fugiat obcaecati nam quos?</li>
+      <li>Delectus sit sint placeat, tempora atque non sed.</li>
+      <li>
+        Nulla, velit similique nemo aspernatur accusantium quae consequatur.
+      </li>
+      <li>Expedita eos repellendus beatae accusamus suscipit alias natus.</li>
+      <li>
+        Nesciunt soluta aliquam quisquam quam, modi consequatur doloribus!
+      </li>
+      <li>
+        Necessitatibus molestias cupiditate porro ullam perferendis, velit
+        adipisci.
+      </li>
+      <li>
+        Molestias impedit maxime corporis quibusdam, consectetur enim ipsam!
+      </li>
+      <li>Fuga at delectus veniam doloribus debitis laudantium nemo?</li>
+    </ol>
+
+    <hr />
+  </body>
+
+  <script>
+    const timer = document.getElementById("timer");
+
+    setInterval(() => {
+      timer.innerText = new Date().toLocaleTimeString();
+    }, 1000);
+
+    const toggle = document.getElementById("toggle-image");
+    const img = document.getElementById("my-image");
+
+    toggle.addEventListener("click", () => {
+      img.style.visibility =
+        img.style.visibility === "hidden" ? "visible" : "hidden";
+    });
+  </script>
+</html>
