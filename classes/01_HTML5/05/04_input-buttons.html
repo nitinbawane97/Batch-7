@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML</title>
+
+    <style>
+      div {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML Form buttons -->
+
+    <form method="get" action="./submit-page.html">
+      <div>
+        <label for="text-input">Text Input</label>
+        <input type="text" id="text-input" name="text" />
+      </div>
+
+      <div>
+        <label for="password-input">Password Input</label>
+        <input type="password" id="password-input" name="pass" />
+      </div>
+
+      <div>
+        <label for="search-input">Search Input</label>
+        <input type="search" id="search-input" name="mysearch" />
+      </div>
+
+      <div>
+        <hr />
+        <h4>My Skills</h4>
+        <label for="cb-input1">HTML</label>
+        <input type="checkbox" id="cb-input1" checked />
+        <br />
+        <label for="cb-input2">CSS</label>
+        <input type="checkbox" id="cb-input2" />
+        <br />
+        <label for="xyz">JavaScript</label>
+        <input type="checkbox" id="xyz" />
+        <hr />
+      </div>
+
+      <div>
+        <input type="button" value="Normal" /> &nbsp;&nbsp;
+        <input type="reset" value="Reset" />&nbsp;&nbsp;
+        <input type="submit" value="Submit" />
+
+        <input type="image" src="./button-image.jpg" height="40px" />
+      </div>
+    </form>
+  </body>
+</html>

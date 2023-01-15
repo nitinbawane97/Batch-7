@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML</title>
+
+    <style>
+      div {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML Forms -->
+
+    <form>
+      <div>
+        <label for="text-input">Text Input</label>
+        <input type="text" id="text-input" />
+      </div>
+
+      <div>
+        <label for="password-input">Password Input</label>
+        <input type="password" id="password-input" />
+      </div>
+
+      <div>
+        <label for="search-input">Search Input</label>
+        <input type="search" id="search-input" />
+      </div>
+
+      <div>
+        <hr />
+        <h4>My Skills</h4>
+        <label for="cb-input1">HTML</label>
+        <input type="checkbox" id="cb-input1" checked />
+        <br />
+        <label for="cb-input2">CSS</label>
+        <input type="checkbox" id="cb-input2" />
+        <br />
+        <label for="xyz">JavaScript</label>
+        <input type="checkbox" id="xyz" />
+        <hr />
+      </div>
+
+      <div>
+        <hr />
+        <h4>Your Role</h4>
+        <label for="radio-input1">Student</label>
+        <input type="radio" id="radio-input1" name="role" />
+        <br />
+        <label for="radio-input2">Faculty</label>
+        <input type="radio" id="radio-input2" name="role" checked />
+        <br />
+        <label for="radio-input3">Mentor</label>
+        <input type="radio" id="radio-input3" name="role" />
+        <hr />
+      </div>
+
+      <div>
+        <label for="select-control">Location</label>
+        <select name="" id="select-control">
+          <option value=""></option>
+
+          <optgroup label="North India">
+            <option value="">Delhi</option>
+            <option value="" selected>Noida</option>
+            <option value="">Kashmir</option>
+          </optgroup>
+
+          <optgroup label="South India">
+            <option value="">Bengaluru</option>
+            <option value="">Chennai</option>
+            <option value="">Hyderabad</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div>
+        <label for="list-control">Location(s)</label>
+        <select name="" id="list-control" size="4" multiple>
+          <option value="">Delhi</option>
+          <option value="" selected>Noida</option>
+          <option value="">Kashmir</option>
+
+          <option value="">Bengaluru</option>
+          <option value="">Chennai</option>
+          <option value="">Hyderabad</option>
+        </select>
+
+        <hr />
+      </div>
+
+      <div>
+        <label for="number-input">Number Input</label>
+        <input type="number" id="number-input" min="100" max="500" step="10" />
+
+        <hr />
+      </div>
+
+      <div>
+        <h4>Date &amp; TimeInputs</h4>
+        <input type="date" /><br /><br />
+        <input type="time" /><br /><br />
+        <input type="datetime-local" /><br /><br />
+        <input type="week" /><br /><br />
+        <input type="month" /><br /><br />
+
+        <hr />
+      </div>
+
+      <div>
+        <textarea cols="20" rows="3"></textarea>
+
+        <hr />
+      </div>
+
+      <div>
+        <input type="color" />
+
+        <hr />
+      </div>
+
+      <div>
+        <input type="range" min="100" max="1000" step="100" value="800" />
+        <hr />
+      </div>
+
+      <div>
+        <input type="hidden" value="hidden" />
+
+        <hr />
+      </div>
+    </form>
+  </body>
+</html>
