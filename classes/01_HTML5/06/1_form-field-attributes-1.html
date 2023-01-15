@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn HTML</title>
+
+    <style>
+      div {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./submit.html" method="get" target="_self">
+      <div>
+        <label for="input-text1">First Name</label>
+        <input
+          type="text"
+          id="input-text1"
+          value="Virat Kohli"
+          size="15"
+          name="firstName"
+          autofocus
+        />
+      </div>
+
+      <div>
+        <label for="input-text2">Middle Name</label>
+        <input
+          type="text"
+          id="input-text2"
+          placeholder="Enter Middle Name"
+          name="middleName"
+        />
+      </div>
+
+      <div>
+        <label for="input-text3">Last Name</label>
+        <input type="text" id="input-text3" maxlength="10" name="lastName" />
+      </div>
+
+      <div>
+        <label for="input-text3">Read-Only</label>
+        <input
+          type="text"
+          id="input-text3"
+          readonly
+          value="10000"
+          name="readOnly"
+        />
+      </div>
+
+      <div>
+        <label for="input-text3">Disabled </label>
+        <input
+          type="text"
+          id="input-text3"
+          disabled
+          value="555555"
+          name="disabled"
+        />
+      </div>
+
+      <div>
+        <label for="textarea1">Text Area</label>
+        <textarea id="textarea1" cols="20" rows="10" name="textArea"></textarea>
+      </div>
+
+      <div>
+        <input type="submit" value="Submit Form" />
+      </div>
+    </form>
+  </body>
+</html>
