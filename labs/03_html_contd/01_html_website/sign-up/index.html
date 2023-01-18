@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Testbook Batch7</title>
+    <meta
+      name="description"
+      content="Sign up for a Testbook account · Go to the Testbook Account creation page. · Follow the steps on the screen to set up your account."
+    />
+
+    <style>
+      div {
+        padding: 10px;
+      }
+
+      label {
+        width: 150px;
+
+        display: inline-block;
+
+        text-align: right;
+      }
+
+      header {
+        height: 60px;
+        background-color: tomato;
+
+        display: grid;
+        align-items: center;
+
+        padding-left: 30px;
+      }
+
+      footer {
+        height: 40px;
+        background-color: olive;
+
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        background-color: silver;
+
+        display: grid;
+
+        grid-template-columns: 100px 1fr;
+      }
+
+      aside {
+        background-color: black;
+
+        padding: 1px;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+
+        padding: 20px;
+      }
+
+      li {
+        padding-bottom: 20px;
+      }
+
+      a {
+        color: red;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h4>Testbook Batch7</h4>
+    </header>
+
+    <main>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="./">Home</a></li>
+            <li><a href="./sign-up">Sign Up</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <section>
+        <h1>Registration Form</h1>
+
+        <form autocomplete="on">
+          <div>
+            <label for="username"><strong>Username</strong></label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              autofocus
+              maxlength="50"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="password"><strong>Password</strong></label>
+            <input type="password" name="" id="password" required />
+          </div>
+
+          <div>
+            <label for="cpassword"><strong>Confirm Password</strong></label>
+            <input type="password" name="" id="cpassword" required />
+          </div>
+
+          <div>
+            <label for="country"><strong>Country (optional)</strong></label>
+            <select name="country" id="country">
+              <option value=""></option>
+              <option value="">Lorem, ipsum.</option>
+              <option value="">Voluptate, quae.</option>
+              <option value="">Laboriosam, illum?</option>
+              <option value="">Architecto, consequuntur.</option>
+              <option value="">Accusantium, quis!</option>
+              <option value="">Illum, minima.</option>
+              <option value="">Consequuntur, neque?</option>
+              <option value="">Incidunt, doloremque!</option>
+              <option value="">Unde, officia.</option>
+              <option value="">Architecto, sequi.</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="hpassport"><strong>Have passport?</strong></label>
+            <input type="checkbox" name="" id="hpassport" />
+          </div>
+
+          <div>
+            <label for="genderm"><strong>Male</strong></label>
+            <input type="radio" name="gender" id="genderm" />
+
+            <label for="genderf"><strong>Female</strong></label>
+            <input type="radio" name="gender" id="genderf" />
+          </div>
+
+          <div>
+            <label for="hpassport"><strong>Address</strong></label>
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+          </div>
+
+          <div>
+            <button>Sign Up</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>&copy; 2023 Testbook Batch 7</footer>
+  </body>
+</html>
