@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <style>
+      /* Universal selector */
+      * {
+        border: none;
+        outline: none;
+
+        padding: 0px;
+        margin: 0px;
+
+        box-sizing: border-box;
+      }
+
+      /* Box Model */
+
+      div {
+        height: 200px;
+        width: 200px;
+
+        background-color: yellow;
+
+        padding: 25px;
+
+        border: 10px red solid;
+
+        margin: 25px;
+      }
+
+      /* 
+      Effect of  box-sizing property values:
+      10 + 25 + 200 + 25 + 10 = 270px height when content-box
+      10 + 25 + 130 + 25 + 10 = 200px height when border-box
+      */
+    </style>
+  </head>
+  <body>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam aperiam
+    </div>
+  </body>
+</html>
