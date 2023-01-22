@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <style>
+      * {
+        border: none;
+        outline: none;
+      }
+
+      div {
+        margin-bottom: 20px;
+      }
+
+      /* --------------------------------------- */
+
+      /* Element selector */
+      input {
+        background-color: yellow;
+      }
+
+      /* class selector */
+      .testclassone {
+        outline: 3px red solid;
+      }
+
+      /* id selector */
+      #testidone {
+        border-bottom: 5px blue solid;
+      }
+
+      /* attribute selector */
+      [type="search"] {
+        border-top: 5px magenta solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <input type="text" id="testidone" />
+    </div>
+
+    <div>
+      <input type="password" class="testclassone" />
+    </div>
+
+    <div>
+      <input type="search" class="testclassone" />
+    </div>
+
+    <div>
+      <input type="text" />
+    </div>
+  </body>
+</html>
