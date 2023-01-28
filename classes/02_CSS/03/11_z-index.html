@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <style>
+      * {
+        border: none;
+        outline: none;
+
+        padding: 0px;
+        margin: 0px;
+
+        font: inherit;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightyellow;
+
+        padding: 25px;
+      }
+
+      div {
+        background-color: cyan;
+
+        padding: 50px;
+      }
+
+      article {
+        background-color: red;
+
+        height: 100px;
+      }
+
+      .one {
+        background-color: red;
+
+        position: relative;
+        z-index: 100;
+      }
+
+      .two {
+        background-color: blue;
+
+        position: relative;
+
+        top: -80px;
+        left: 20px;
+
+        z-index: 75;
+      }
+
+      .three {
+        background-color: green;
+
+        position: relative;
+
+        top: -160px;
+        left: 40px;
+
+        z-index: 50;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <article class="one"></article>
+      <article class="two"></article>
+      <article class="three"></article>
+    </div>
+  </body>
+</html>

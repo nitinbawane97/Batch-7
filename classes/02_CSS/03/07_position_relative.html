@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <style>
+      /* position:
+      static --> normal flow
+      relative --> positioned relative to normal flow position,
+      absolute, --> absolute to html doc or to parent if parent's position is non-static
+      sticky --> in normal position till scroll to viewport  position
+      fixed --> fixed to viewport
+      */
+
+      * {
+        border: none;
+        outline: none;
+
+        padding: 0px;
+        margin: 0px;
+
+        font: inherit;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: lightyellow;
+
+        padding: 25px;
+      }
+
+      div {
+        background-color: cyan;
+
+        padding: 50px;
+      }
+
+      article {
+        background-color: red;
+
+        height: 50px;
+      }
+
+      section {
+        background-color: blue;
+
+        height: 50px;
+
+        position: relative;
+
+        top: 20px;
+        left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <article></article>
+      <section></section>
+      <article></article>
+    </div>
+  </body>
+</html>
