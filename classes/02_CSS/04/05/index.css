@@ -1,0 +1,74 @@
+/* Flexbox Layout Model*/
+
+body {
+  background-color: silver;
+
+  font-size: 28px;
+}
+
+.flex-container {
+  background-color: cyan;
+
+  height: 550px;
+
+  border: blue 5px solid;
+
+  display: flex;
+
+  flex-direction: row; /*default: row*/
+  flex-wrap: wrap; /*default: nowrap*/
+
+  flex-flow: row wrap;
+
+  /* justify is always along main axis */
+  justify-content: center; /*default: flex-start*/
+
+  /* align is always along cross axis */
+  align-items: center; /*default: stretch*/
+
+  /* align is always along cross axis*/
+  align-content: stretch;
+
+  gap: 5px;
+}
+
+.flex-item {
+  border: 2px magenta solid;
+
+  /* min-width: 100px; */
+
+  flex-basis: 100px; /*Dimension of the flex item along the main axis*/
+
+  flex-grow: 0; /*default: 0*/
+  flex-shrink: 1; /*default: 1*/
+
+  flex: 0 1 100px;
+}
+
+.item-1 {
+  min-height: 100px;
+}
+
+.item-2 {
+  min-height: 50px;
+
+  align-self: center;
+}
+
+.item-3 {
+  min-height: 75px;
+}
+
+.item-4 {
+  min-height: 125px;
+}
+
+.item-5 {
+  min-height: 65px;
+
+  padding: 20px;
+}
+
+.item-6 {
+  min-height: 60px;
+}

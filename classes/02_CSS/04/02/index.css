@@ -1,0 +1,22 @@
+/* CSS Gradients */
+
+body {
+  background-color: silver;
+}
+
+div {
+  height: 300px;
+  width: 300px;
+
+  margin: 50px auto;
+
+  background-image: radial-gradient(
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+}

@@ -1,0 +1,30 @@
+/* CSS Gradients */
+
+body {
+  background-color: silver;
+}
+
+div {
+  height: 200px;
+  width: 200px;
+
+  margin: 50px auto;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 0, 0, 0.5),
+      rgba(0, 255, 0, 0.5)
+    ),
+    url("./images/ashneer.jpg");
+
+  background-size: cover;
+}
+
+article {
+  height: 200px;
+  width: 200px;
+
+  background-color: rgba(255, 0, 0, 0.1);
+
+  margin: 0 auto;
+}
