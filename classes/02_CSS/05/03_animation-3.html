@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      body {
+        background-color: silver;
+      }
+
+      div {
+        height: 400px;
+        width: 400px;
+
+        background-color: magenta;
+
+        margin: 50px auto;
+
+        position: relative;
+      }
+
+      article {
+        background-color: white;
+
+        height: 50px;
+        width: 50px;
+
+        border-radius: 50%;
+
+        position: absolute;
+
+        animation-name: ball-animation;
+        animation-duration: 2s;
+        animation-delay: 2s;
+        animation-direction: normal;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        animation-fill-mode: both;
+
+        /* speed curve */
+        animation-timing-function: linear;
+      }
+
+      @keyframes ball-animation {
+        0% {
+          top: 0px;
+          left: 175px;
+
+          background-color: red;
+        }
+        25% {
+          top: 175px;
+          left: 350px;
+
+          background-color: yellow;
+        }
+        50% {
+          top: 350px;
+          left: 175px;
+
+          background-color: green;
+        }
+        75% {
+          top: 175px;
+          left: 0px;
+
+          background-color: cyan;
+        }
+        100% {
+          top: 0px;
+          left: 175px;
+
+          background-color: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <article></article>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    animation-timing-function:
+    linear -- always same speed
+    ease -- slow-fast-slow -- default
+    ease-in -- slow-fast
+    ease-out -- fast-slow
+    ease-in-out -- fast slow fast
+ -->

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <style>
+      article {
+        background-color: silver;
+      }
+
+      /* CSS Combinators */
+
+      /* Descendant Selector - use space character*/
+      /* body p {
+        background-color: yellow;
+      } */
+
+      /* Child Selector - use the greater than character*/
+      /* body > p {
+        background-color: yellow;
+      } */
+
+      /* Adjacent Sibling Selector - use the + character*/
+      /* h2 + p {
+        background-color: yellow;
+      } */
+
+      /* General Sibling Selector - use the ~ character*/
+      h2 ~ p {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This is header one</h1>
+    <p>This is para one</p>
+    <p>This is para two</p>
+
+    <article>
+      <p>This is child para one</p>
+      <h2>This is header two</h2>
+      <p>This is child para two</p>
+      <p>This is child para three</p>
+
+      <ul>
+        <li>List Item One</li>
+        <li>List Item Two</li>
+        <li>List Item Three</li>
+      </ul>
+
+      <p>This is child para four</p>
+      <p>This is child para five</p>
+    </article>
+
+    <p>This is para three</p>
+    <p>This is para four</p>
+  </body>
+</html>

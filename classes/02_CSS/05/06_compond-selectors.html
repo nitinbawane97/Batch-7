@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./static/css/reset.css" />
+
+    <style>
+      #mydiv.myclass[data-value] {
+        background-color: red;
+
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mydiv" class="myclass" data-value="something">
+      <input type="text" />
+    </div>
+
+    <div id="notmydiv" class="myclass">
+      <input type="text" />
+    </div>
+  </body>
+</html>
