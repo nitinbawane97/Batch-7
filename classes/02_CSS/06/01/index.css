@@ -1,0 +1,39 @@
+/* Specificity */
+
+/*
+1. Order of the declaration
+2. !important
+3. Inline Style
+4. Selector weightage
+*/
+
+/* 
+0-0-0   Universal
+0-0-1   Type, Pseudo Element
+0-1-0   Class, Pseudo Class, Attribute
+1-0-0   ID
+*/
+
+input#mytextbox.textbox {
+  /* 1-1-1  */
+  background-color: orange;
+}
+
+#mytextbox:enabled {
+  /* 1-1-0 */
+  background-color: yellow;
+}
+
+body {
+  background-color: silver;
+
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  height: 30px;
+}

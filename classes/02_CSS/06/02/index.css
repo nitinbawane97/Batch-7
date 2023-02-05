@@ -1,0 +1,87 @@
+body {
+  min-height: 100vh;
+
+  background-color: silver;
+}
+
+/* css grid layout model */
+
+.grid-container {
+  background-color: yellow;
+
+  height: 650px;
+
+  border: 5px black solid;
+
+  /* fr stands for fraction */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  /* grid-row-gap: 10px;
+  grid-column-gap: 20px; */
+
+  grid-gap: 10px;
+
+  /* 
+    content -- align from pov grid container
+    items -- align from pov grid items 
+
+    align -- along column (vertical)
+    justify -- along row (horizontal)
+  */
+  justify-content: stretch;
+  align-content: stretch;
+
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+.grid-item {
+  background-color: coral;
+
+  border: 3px blue solid;
+}
+
+.item-one {
+  min-height: 50px;
+  min-width: 50px;
+
+  background-color: darkcyan;
+
+  /* grid-column: 1/3;
+  grid-row: 1/4; */
+
+  grid-area: 1/1/4/3;
+}
+
+.item-two {
+  min-height: 75px;
+  min-width: 75px;
+}
+
+.item-three {
+  min-height: 100px;
+  min-width: 100px;
+
+  background-color: blueviolet;
+
+  /* grid-column: 3/4;
+  grid-row: 2/4; */
+
+  grid-area: 2/3/4/4;
+}
+
+.item-four {
+  min-height: 125px;
+  min-width: 125px;
+}
+
+.item-five {
+  min-height: 60px;
+  min-width: 60px;
+}
+
+.item-six {
+  min-height: 70px;
+  min-width: 70px;
+}
