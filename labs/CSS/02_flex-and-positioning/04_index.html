@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+
+        background-color: silver;
+      }
+
+      .hero {
+        background-image: url("./images/ln_hero.svg");
+
+        height: 200px;
+
+        background-size: cover;
+
+        position: relative;
+      }
+
+      .profilepic {
+        background-image: url("./images/ashneer.jpg");
+
+        background-size: contain;
+
+        height: 100px;
+        width: 100px;
+
+        position: absolute;
+
+        bottom: -50px;
+        left: 50px;
+
+        border-radius: 50%;
+        outline: 5px white solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="profilepic"></div>
+    </div>
+  </body>
+</html>

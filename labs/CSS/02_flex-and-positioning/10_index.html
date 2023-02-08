@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+
+        background-color: silver;
+      }
+
+      header {
+        height: 60px;
+        width: 100%;
+
+        background-color: lightsalmon;
+
+        position: fixed;
+        top: 0px;
+      }
+
+      main {
+        min-height: calc(100vh - 40px);
+
+        padding: 20px;
+
+        padding-top: 80px;
+
+        display: flex;
+        flex-wrap: wrap;
+
+        gap: 20px;
+      }
+
+      footer {
+        height: 40px;
+
+        background-color: lightseagreen;
+      }
+
+      div {
+        background-color: aqua;
+
+        height: 300px;
+        flex-basis: 300px;
+
+        flex-grow: 1;
+
+        font-size: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+    </main>
+    <footer></footer>
+  </body>
+</html>

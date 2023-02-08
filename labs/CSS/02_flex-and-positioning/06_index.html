@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+
+    <style>
+      body {
+        min-height: 100vh;
+
+        background-color: silver;
+      }
+
+      header {
+        height: 60px;
+        width: 100%;
+
+        background-color: lightsalmon;
+
+        position: fixed;
+        top: 0px;
+      }
+
+      main {
+        min-height: calc(100vh - 40px);
+
+        padding-top: 60px;
+      }
+
+      footer {
+        height: 40px;
+
+        background-color: lightseagreen;
+      }
+
+      nav {
+        background-color: aqua;
+      }
+
+      ul {
+        display: flex;
+        list-style-type: none;
+
+        justify-content: space-around;
+
+        padding: 10px 0px;
+      }
+
+      a {
+        text-decoration: none;
+
+        font-weight: 600;
+
+        color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+
+          <li><a href="">Contact Us</a></li>
+
+          <li><a href="">About Us</a></li>
+
+          <li><a href="">Products</a></li>
+
+          <li><a href="">Services</a></li>
+        </ul>
+      </nav>
+    </main>
+    <footer></footer>
+  </body>
+</html>
