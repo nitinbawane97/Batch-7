@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+
+    <style>
+      body {
+        height: 100vh;
+
+        background-color: silver;
+      }
+
+      header {
+        height: 60px;
+        background-color: lightsalmon;
+
+        position: fixed;
+        top: 0px;
+
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      main {
+        min-height: calc(100vh - 40px);
+
+        background-color: lightskyblue;
+
+        padding: 76px 16px 16px 16px;
+      }
+
+      footer {
+        height: 40px;
+        background-color: lightslategray;
+      }
+      /* ---------------------------------------- */
+      /* Masonary Layout */
+
+      article {
+        background-color: lightgreen;
+      }
+
+      main {
+        display: grid;
+        gap: 16px;
+      }
+
+      @media all and (min-width: 768px) {
+        main {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media all and (min-width: 1024px) {
+        main {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      section {
+        display: grid;
+        gap: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section>
+        <article style="min-height: 100px"></article>
+        <article style="min-height: 70px"></article>
+        <article style="min-height: 110px"></article>
+        <article style="min-height: 130px"></article>
+        <article style="min-height: 170px"></article>
+        <article style="min-height: 200px"></article>
+        <article style="min-height: 120px"></article>
+        <article style="min-height: 90px"></article>
+        <article style="min-height: 150px"></article>
+      </section>
+
+      <section>
+        <article style="min-height: 200px"></article>
+        <article style="min-height: 120px"></article>
+        <article style="min-height: 130px"></article>
+        <article style="min-height: 170px"></article>
+        <article style="min-height: 90px"></article>
+        <article style="min-height: 150px"></article>
+        <article style="min-height: 100px"></article>
+        <article style="min-height: 70px"></article>
+        <article style="min-height: 110px"></article>
+      </section>
+
+      <section>
+        <article style="min-height: 170px"></article>
+        <article style="min-height: 200px"></article>
+        <article style="min-height: 150px"></article>
+        <article style="min-height: 120px"></article>
+        <article style="min-height: 100px"></article>
+        <article style="min-height: 130px"></article>
+        <article style="min-height: 90px"></article>
+        <article style="min-height: 70px"></article>
+        <article style="min-height: 110px"></article>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

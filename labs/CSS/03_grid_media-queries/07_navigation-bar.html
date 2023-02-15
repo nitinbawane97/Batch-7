@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn CSS</title>
+
+    <link rel="stylesheet" href="./reset.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      body {
+        height: 100vh;
+
+        background-color: silver;
+      }
+
+      header {
+        height: 60px;
+        background-color: lightsalmon;
+
+        position: fixed;
+        top: 0px;
+
+        width: 100%;
+        opacity: 0.9;
+      }
+
+      main {
+        min-height: calc(100vh - 40px);
+
+        background-color: lightskyblue;
+
+        padding: 76px 16px 16px 16px;
+      }
+
+      footer {
+        height: 40px;
+        background-color: lightslategray;
+      }
+      /* ---------------------------------------- */
+      header {
+        display: grid;
+        gap: 20px;
+
+        grid-template-columns: 1fr 50px;
+      }
+
+      .rhs-section {
+        display: grid;
+        place-items: center;
+      }
+
+      nav {
+        position: fixed;
+
+        top: 60px;
+        right: 0px;
+
+        width: 120px;
+
+        background-color: lightseagreen;
+
+        padding: 5px 16px;
+
+        display: none;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        text-align: right;
+
+        padding-bottom: 10px;
+
+        color: green;
+      }
+
+      li:hover {
+        color: yellow;
+
+        cursor: pointer;
+      }
+
+      .hamburger-icon {
+        cursor: pointer;
+      }
+
+      @media all and (min-width: 1024px) {
+        .hamburger-icon-div {
+          display: none;
+        }
+
+        nav {
+          display: block;
+          position: static;
+
+          width: 100%;
+
+          background-color: inherit;
+        }
+
+        nav ul {
+          display: flex;
+          gap: 20px;
+
+          justify-content: space-around;
+        }
+
+        header {
+          grid-template-columns: 50px 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="lhs-section"></div>
+
+      <div class="rhs-section">
+        <div class="hamburger-icon-div">
+          <i class="fa-solid fa-bars hamburger-icon" onclick="toggle()"></i>
+        </div>
+        <nav id="navigation">
+          <ul>
+            <li>Link One</li>
+            <li>Link Two</li>
+            <li>Link Three</li>
+            <li>Link Four</li>
+            <li>Link Five</li>
+            <li>Link Six</li>
+            <li>Link Seven</li>
+            <li>Link Eight</li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+
+  <script>
+    function toggle() {
+      const nav = document.getElementById("navigation");
+
+      nav.style.display = nav.style.display === "block" ? "none" : "block";
+    }
+  </script>
+</html>
